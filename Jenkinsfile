@@ -14,7 +14,7 @@ pipeline {
       stage('Preparation') {
          steps {
             cleanWs()
-            git credentialsId: 'GitHub', url: "https://github.com/${ORGANIZATION_NAME}/${SERVICE_NAME}"
+            git credentialsId: 'GitHub', url: "https://https://github.com/gaellesimo/k8s.git/${SERVICE_NAME}"
          }
       }
       stage('Build') {
